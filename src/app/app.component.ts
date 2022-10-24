@@ -26,6 +26,8 @@ export class AppComponent {
    * @param user {User} - egy felhasználó
    * @returns {void}
    */
-
+    onDeleteUser(user: { id: number; name: string; email: string; address: string; active: boolean}):void{
+      this.userService.removeUser(user)
+    }
 
 }
